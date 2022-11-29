@@ -1,0 +1,121 @@
+#SCRIPT DE CREATION DE LA BASE DE DONNEES
+#GROUPE 9
+
+
+#MEMBRES DU GROUPE
+# 1- ALLAHNDIGUIM YANNICK
+# 2- KAANA ALBERT
+# 3- SOWENG DAVIS
+# 4- FOTSO FOALENG DUVAL
+
+
+# TABLE : STOCK
+
+DROP TABLE IF EXISTS STOCK;
+CREATE TABLE STOCK(
+        Id_Stock     Auto_increment (30),
+        Date_Stock     Date (25),
+        Durée_Stock     Int,
+        PRIMARY KEY (Id_Stock)
+)ENGINE=InnoDB;
+
+# TABLE : INGREDIENTS
+
+DROP TABLE IF EXISTS INGREDIENTS;
+CREATE TABLE INGREDIENTS(
+        Id_Ingrédient     Auto_increment (25),
+        Nom_Ingrédient     Varchar (25),
+        Etat_Ingrédient     Varchar (25),
+        Id_Stock_STOCK     Auto_increment (30),
+        PRIMARY KEY (Id_Ingrédient)
+)ENGINE=InnoDB;
+
+
+#TABLE : EQUIPEMENT CUISINE
+
+DROP TABLE IF EXISTS EQUIPEMENT CUISINE;
+CREATE TABLE EQUIPEMENT CUISINE(
+        Id_Equipement     Auto_increment (25,2),
+        Eqmt_Cuisine     Varchar (25),
+        Qté_Equipement     Int (25),
+        PRIMARY KEY (Id_Equipement)
+)ENGINE=InnoDB;
+
+
+#TABLE : EXISTS DENREES
+
+DROP TABLE IF EXISTS DENREES;
+CREATE TABLE DENREES(
+        Id_denrée     Auto_increment (25),
+        Type_Denrée     Varchar (250),
+        Qté_denrée     Int (25),
+        Date_denrée     Date (25),
+        Prix_denrée     Float (25),
+        Id_Stock_STOCK     Auto_increment (30),
+        PRIMARY KEY (Id_denrée)
+)ENGINE=InnoDB;
+
+
+#TABLE :RECETTES
+
+DROP TABLE IF EXISTS RECETTES;
+CREATE TABLE RECETTES(
+        Id_Recette     Auto_increment (25),
+        Nom_Recette     Varchar (25),
+        Type_Recette     Varchar (25),
+        Temp_Preparation     Datetime,
+        Prix     Float (25),
+        PRIMARY KEY (Id_Recette)
+)ENGINE=InnoDB;
+
+#TABLE : MATERIELS RESTAURATION
+
+DROP TABLE IF EXISTS MATERIELS RESTAURATION;
+CREATE TABLE MATERIELS RESTAURATION(
+        Id_Materiel_Restauration     Auto_increment (25),
+        Nom_Materiel_Restauration     Varchar (250,2),
+        Type_Materiel_Restauration     Varchar (250),
+        Qté_Materiel_Restauration     Int (25),
+        PRIMARY KEY (Id_Materiel_Restauration)
+)ENGINE=InnoDB;
+
+# TABLE: MATERIELS RESTAURATION
+
+DROP TABLE IF EXISTS Faire;
+CREATE TABLE Faire(
+        Id_Equipement_EQUIPEMENT CUISINE     Auto_increment (25,2),
+        Id_Recette_RECETTES     Auto_increment (25),
+        PRIMARY KEY (Id_Equipement_EQUIPEMENT CUISINE,Id_Recette_RECETTES)
+)ENGINE=InnoDB;
+
+#TABLE: Comprendre
+
+
+DROP TABLE IF EXISTS Comprendre;
+CREATE TABLE Comprendre(
+        Id_Recette_RECETTES     Auto_increment (25),
+        Id_Ingrédient_INGREDIENTS     Auto_increment (25),
+        PRIMARY KEY (Id_Recette_RECETTES,Id_Ingrédient_INGREDIENTS)
+)ENGINE=InnoDB;
+
+
+#TABLE: utiliser
+
+
+DROP TABLE IF EXISTS utiliser;
+CREATE TABLE utiliser(
+        Id_denrée_DENREES     Auto_increment (25),
+        Id_Recette_RECETTES     Auto_increment (25),
+        PRIMARY KEY (Id_denrée_DENREES,Id_Recette_RECETTES)
+)ENGINE=InnoDB;
+
+
+
+ALTER TABLE INGREDIENTS ADD CONSTRAINT FK_INGREDIENTS_Id_Stock_STOCK FOREIGN KEY (Id_Stock_STOCK) REFERENCES STOCK(Id_Stock)
+ALTER TABLE DENREES ADD CONSTRAINT FK_DENREES_Id_Stock_STOCK FOREIGN KEY (Id_Stock_STOCK) REFERENCES STOCK(Id_Stock)
+ALTER TABLE Faire ADD CONSTRAINT FK_Faire_Id_Equipement_EQUIPEMENT CUISINE FOREIGN KEY (Id_Equipement_EQUIPEMENT CUISINE) REFERENCES EQUIPEMENT CUISINE(Id_Equipement)
+ALTER TABLE Faire ADD CONSTRAINT FK_Faire_Id_Recette_RECETTES FOREIGN KEY (Id_Recette_RECETTES) REFERENCES RECETTES(Id_Recette)
+ALTER TABLE Comprendre ADD CONSTRAINT FK_Comprendre_Id_Recette_RECETTES FOREIGN KEY (Id_Recette_RECETTES) REFERENCES RECETTES(Id_Recette)
+ALTER TABLE Comprendre ADD CONSTRAINT FK_Comprendre_Id_Ingrédient_INGREDIENTS FOREIGN KEY (Id_Ingrédient_INGREDIENTS) REFERENCES INGREDIENTS(Id_Ingrédient)
+ALTER TABLE utiliser ADD CONSTRAINT FK_utiliser_Id_denrée_DENREES FOREIGN KEY (Id_denrée_DENREES) REFERENCES DENREES(Id_denrée)
+ALTER TABLE utiliser ADD CONSTRAINT FK_utiliser_Id_Recette_RECETTES FOREIGN KEY (Id_Recette_RECETTES) REFERENCES RECETTES(Id_Recette)
