@@ -1,0 +1,14 @@
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\bin\Debug\RestaurantGroupe9.exe.config
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\bin\Debug\RestaurantGroupe9.exe
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\bin\Debug\RestaurantGroupe9.pdb
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.Form1.resources
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.Properties.Resources.resources
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.Restaurant.resources
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.csproj.GenerateResource.cache
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.csproj.CoreCompileInputs.cache
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.exe
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.pdb
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.Cuisine.resources
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.Reception.resources
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.View.Reservation.resources
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.csprojAssemblyReference.cache
