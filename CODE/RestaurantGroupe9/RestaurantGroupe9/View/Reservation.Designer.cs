@@ -42,7 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.bt_enregistrer = new System.Windows.Forms.Button();
-            this.date_reserve = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -105,6 +105,7 @@
             this.bt_ajouter.TabIndex = 4;
             this.bt_ajouter.Text = "Ajouter";
             this.bt_ajouter.UseVisualStyleBackColor = true;
+            this.bt_ajouter.Click += new System.EventHandler(this.bt_ajouter_Click);
             // 
             // bt_supprimer
             // 
@@ -114,6 +115,7 @@
             this.bt_supprimer.TabIndex = 5;
             this.bt_supprimer.Text = "Supprimer";
             this.bt_supprimer.UseVisualStyleBackColor = true;
+            this.bt_supprimer.Click += new System.EventHandler(this.bt_supprimer_Click);
             // 
             // groupBox1
             // 
@@ -134,6 +136,7 @@
             this.bt_modifier.TabIndex = 6;
             this.bt_modifier.Text = "Modifier";
             this.bt_modifier.UseVisualStyleBackColor = true;
+            this.bt_modifier.Click += new System.EventHandler(this.bt_modifier_Click);
             // 
             // textBox1
             // 
@@ -175,22 +178,20 @@
             this.bt_enregistrer.TabIndex = 7;
             this.bt_enregistrer.Text = "Enregistrer";
             this.bt_enregistrer.UseVisualStyleBackColor = true;
+            this.bt_enregistrer.Click += new System.EventHandler(this.bt_enregistrer_Click);
             // 
-            // date_reserve
+            // textBox4
             // 
-            this.date_reserve.AutoSize = true;
-            this.date_reserve.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_reserve.Location = new System.Drawing.Point(178, 257);
-            this.date_reserve.Name = "date_reserve";
-            this.date_reserve.Size = new System.Drawing.Size(20, 16);
-            this.date_reserve.TabIndex = 12;
-            this.date_reserve.Text = "...";
+            this.textBox4.Location = new System.Drawing.Point(181, 252);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(134, 20);
+            this.textBox4.TabIndex = 12;
             // 
             // Reservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.date_reserve);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.bt_enregistrer);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
@@ -227,6 +228,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button bt_enregistrer;
-        private System.Windows.Forms.Label date_reserve;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
