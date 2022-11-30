@@ -69,5 +69,10 @@ namespace RestaurantGroupe9.View
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

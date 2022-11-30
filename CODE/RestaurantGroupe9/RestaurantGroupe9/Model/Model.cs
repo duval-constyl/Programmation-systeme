@@ -12,6 +12,8 @@ namespace RestaurantGroupe9.Model
         public RestaurantGroupe9.Model.Reception.GestionReception gestionReception;
         public RestaurantGroupe9.Model.Cuisine.Menu menu;
 
+       // public void tick() {}
+
         public Model()
 
         {

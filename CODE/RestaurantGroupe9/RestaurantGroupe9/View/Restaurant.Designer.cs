@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Restaurant));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.maximum = new System.Windows.Forms.Button();
+            this.minimal = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Label();
             this.reserver = new System.Windows.Forms.Button();
             this.stop = new System.Windows.Forms.Button();
             this.reception = new System.Windows.Forms.Button();
@@ -37,12 +41,16 @@
             this.cuisine1 = new RestaurantGroupe9.Cuisine();
             this.reservation1 = new RestaurantGroupe9.View.Reservation();
             this.reception1 = new RestaurantGroupe9.Reception();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.maximum);
+            this.panel1.Controls.Add(this.minimal);
+            this.panel1.Controls.Add(this.timer);
             this.panel1.Controls.Add(this.reserver);
             this.panel1.Controls.Add(this.stop);
             this.panel1.Controls.Add(this.reception);
@@ -54,10 +62,43 @@
             this.panel1.Size = new System.Drawing.Size(134, 450);
             this.panel1.TabIndex = 0;
             // 
+            // maximum
+            // 
+            this.maximum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maximum.Location = new System.Drawing.Point(99, 96);
+            this.maximum.Name = "maximum";
+            this.maximum.Size = new System.Drawing.Size(30, 32);
+            this.maximum.TabIndex = 7;
+            this.maximum.Text = ">";
+            this.maximum.UseVisualStyleBackColor = true;
+            this.maximum.Click += new System.EventHandler(this.maximum_Click);
+            // 
+            // minimal
+            // 
+            this.minimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimal.Location = new System.Drawing.Point(24, 96);
+            this.minimal.Name = "minimal";
+            this.minimal.Size = new System.Drawing.Size(30, 32);
+            this.minimal.TabIndex = 6;
+            this.minimal.Text = "<";
+            this.minimal.UseVisualStyleBackColor = true;
+            this.minimal.Click += new System.EventHandler(this.minimal_Click);
+            // 
+            // timer
+            // 
+            this.timer.AutoSize = true;
+            this.timer.BackColor = System.Drawing.Color.White;
+            this.timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timer.Location = new System.Drawing.Point(61, 100);
+            this.timer.Name = "timer";
+            this.timer.Size = new System.Drawing.Size(32, 24);
+            this.timer.TabIndex = 5;
+            this.timer.Text = "x1";
+            // 
             // reserver
             // 
             this.reserver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reserver.Location = new System.Drawing.Point(24, 361);
+            this.reserver.Location = new System.Drawing.Point(24, 408);
             this.reserver.Name = "reserver";
             this.reserver.Size = new System.Drawing.Size(105, 30);
             this.reserver.TabIndex = 4;
@@ -68,7 +109,7 @@
             // stop
             // 
             this.stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stop.Location = new System.Drawing.Point(24, 408);
+            this.stop.Location = new System.Drawing.Point(24, 57);
             this.stop.Name = "stop";
             this.stop.Size = new System.Drawing.Size(105, 30);
             this.stop.TabIndex = 3;
@@ -79,7 +120,7 @@
             // reception
             // 
             this.reception.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reception.Location = new System.Drawing.Point(24, 73);
+            this.reception.Location = new System.Drawing.Point(24, 336);
             this.reception.Name = "reception";
             this.reception.Size = new System.Drawing.Size(105, 30);
             this.reception.TabIndex = 2;
@@ -90,7 +131,7 @@
             // cuisine
             // 
             this.cuisine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cuisine.Location = new System.Drawing.Point(24, 122);
+            this.cuisine.Location = new System.Drawing.Point(24, 372);
             this.cuisine.Name = "cuisine";
             this.cuisine.Size = new System.Drawing.Size(105, 30);
             this.cuisine.TabIndex = 1;
@@ -126,16 +167,28 @@
             // 
             // reception1
             // 
+            this.reception1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("reception1.BackgroundImage")));
             this.reception1.Location = new System.Drawing.Point(3, 0);
             this.reception1.Name = "reception1";
             this.reception1.Size = new System.Drawing.Size(666, 450);
             this.reception1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(584, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 24);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
             // 
             // Restaurant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.reception1);
             this.Controls.Add(this.reservation1);
             this.Controls.Add(this.cuisine1);
@@ -144,7 +197,9 @@
             this.Text = "GESTION RESTAURANT GROUPE 9";
             this.Load += new System.EventHandler(this.Restaurant_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -159,5 +214,9 @@
         private Cuisine cuisine1;
         private View.Reservation reservation1;
         private Reception reception1;
+        private System.Windows.Forms.Button maximum;
+        private System.Windows.Forms.Button minimal;
+        private System.Windows.Forms.Label timer;
+        private System.Windows.Forms.Label label1;
     }
 }

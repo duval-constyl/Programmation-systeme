@@ -16,10 +16,10 @@ namespace RestaurantGroupe9.Model.Reception
 
         {
             carre = new List<Carre>();
-            this.maitreHotel = new MaitreHotel(1310, 755);
+            this.maitreHotel = new MaitreHotel(82, 95);
             this.carre.Add(new Carre(1));
             this.carre.Add(new Carre(2));
-            this.commis = new Commis(25, 125);
+            this.commis = new Commis(68, 285);
             clients = new List<Client>();
             clients.Add(new Client(3));
 

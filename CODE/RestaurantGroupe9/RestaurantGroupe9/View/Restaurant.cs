@@ -12,13 +12,42 @@ namespace RestaurantGroupe9
 {
     public partial class Restaurant : Form
     {
+        //private RestaurantGroupe9.Model.Model resto;
         public static int speed = 10;
         public bool verif = true;
+       /* private bool appLancee = false;
+        private bool appEnPause;
+        private int compteurMinute = 1;
+        private int compteurHeure = 12;
+        private int tickMax = 0;
+        private string stats = "";*/
+
+       
+
         public Restaurant()
         {
             InitializeComponent();
         }
+       /* private void timer1_Tick(object sender, EventArgs e)
+        {
+            tickMax += 1;
+            resto.tick();
+            if (this.compteurMinute < 10)
+            {
+                this.label1.Text = this.compteurHeure + " H 0" + this.compteurMinute;
+            }
+            else
+            {
+                this.label1.Text = this.compteurHeure + " H " + this.compteurMinute;
+            }
+            this.compteurMinute += 1;
+            if (this.compteurMinute == 60)
+            {
+                this.compteurHeure += 1;
+                this.compteurMinute = 0;
+            }
 
+        }*/
         private void Restaurant_Load(object sender, EventArgs e)
         {
 
@@ -26,7 +55,25 @@ namespace RestaurantGroupe9
 
         private void pause_Click(object sender, EventArgs e)
         {
-            if (verif == true)
+            /*if (this.appLancee == true)
+            {
+                if (this.timer1.Enabled == true)
+                {
+                    this.timer1.Enabled = false;
+                    this.appEnPause = true;
+                }
+                else
+                {
+                    this.timer1.Enabled = true;
+                    this.appEnPause = false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Aucune simulation de lancée");
+            }*/
+
+           if (verif == true)
             {
                 speed = 0;
                 verif = false;
@@ -75,5 +122,14 @@ namespace RestaurantGroupe9
 
         }
 
+        private void minimal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maximum_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

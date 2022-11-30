@@ -12,3 +12,7 @@ C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\Rest
 C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.Reception.resources
 C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.View.Reservation.resources
 C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.csprojAssemblyReference.cache
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\bin\Debug\SpriteLibrary.dll
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\bin\Debug\SpriteLibrary.pdb
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\bin\Debug\SpriteLibrary.xml
+C:\Users\FOALCAM\source\repos\RestaurantGroupe9\RestaurantGroupe9\obj\Debug\RestaurantGroupe9.csproj.CopyComplete

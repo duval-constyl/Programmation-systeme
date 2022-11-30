@@ -25,10 +25,10 @@ namespace RestaurantGroupe9.Model.Reception
                     rang.Add(new Rang(1));
                     rang.Add(new Rang(2));
 
-                    chefRang = new ChefRang(634, 800);
+                    chefRang = new ChefRang(93, 423);
 
-                    serveur.Add(new Serveur(385, 210));
-                    serveur.Add(new Serveur(427, 242));
+                    serveur.Add(new Serveur(358, 423));
+                    serveur.Add(new Serveur(628, 165));
                     break;
                 default:
                     this.rang = null;
