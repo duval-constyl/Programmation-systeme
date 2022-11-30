@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SpriteLibrary">
+      <HintPath>..\..\..\..\Desktop\C++\projet csharp\Nouveau dossier (2)\SpriteLibrary\bin\Debug\SpriteLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Cuisine\ChefCuisine.cs" />
+    <Compile Include="Model\Cuisine\ChefPartie.cs" />
+    <Compile Include="Model\Cuisine\Commande.cs" />
+    <Compile Include="Model\Cuisine\Commis.cs" />
+    <Compile Include="Model\Cuisine\Cuisson.cs" />
+    <Compile Include="Model\Cuisine\GestionCuisine.cs" />
+    <Compile Include="Model\Cuisine\Menu.cs" />
+    <Compile Include="Model\Cuisine\Plongeur.cs" />
+    <Compile Include="Model\Cuisine\Stock.cs" />
+    <Compile Include="Model\Model.cs" />
+    <Compile Include="Model\Reception\Carre.cs" />
+    <Compile Include="Model\Reception\ChefRang.cs" />
+    <Compile Include="Model\Reception\Client.cs" />
+    <Compile Include="Model\Reception\Commis.cs" />
+    <Compile Include="Model\Reception\GestionReception.cs" />
+    <Compile Include="Model\Reception\MaitreHotel.cs" />
+    <Compile Include="Model\Reception\Rang.cs" />
+    <Compile Include="Model\Reception\Serveur.cs" />
+    <Compile Include="Model\Reception\Table.cs" />
     <Compile Include="View\Cuisine.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -117,8 +139,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />
-    <Folder Include="Model\Cuisine\" />
-    <Folder Include="Model\Reception\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

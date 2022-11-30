@@ -13,90 +13,101 @@
 
 DROP TABLE IF EXISTS STOCK;
 CREATE TABLE STOCK(
-        Id_Stock     Auto_increment (30),
-        Date_Stock     Date (25),
-        Durée_Stock     Int,
-        PRIMARY KEY (Id_Stock)
-)ENGINE=InnoDB;
+        Id_Stock     INTEGER IDENTITY(1, 1) PRIMARY KEY,
+        Date_Stock     DATE,
+        Durée_Stock     INT,
+)
 
 # TABLE : INGREDIENTS
 
 DROP TABLE IF EXISTS INGREDIENTS;
 CREATE TABLE INGREDIENTS(
-        Id_Ingrédient     Auto_increment (25),
-        Nom_Ingrédient     Varchar (25),
-        Etat_Ingrédient     Varchar (25),
-        Id_Stock_STOCK     Auto_increment (30),
+        Id_Ingrédient     INTEGER IDENTITY(1, 1) PRIMARY KEY,
+        Nom_Ingrédient     VARCHAR(25),
+        Etat_Ingrédient     VARCHAR(25),
+        Id_Stock_STOCK     INTEGER IDENTITY(1, 1),
         PRIMARY KEY (Id_Ingrédient)
-)ENGINE=InnoDB;
+)
 
 
 #TABLE : EQUIPEMENT CUISINE
 
-DROP TABLE IF EXISTS EQUIPEMENT CUISINE;
-CREATE TABLE EQUIPEMENT CUISINE(
-        Id_Equipement     Auto_increment (25,2),
-        Eqmt_Cuisine     Varchar (25),
-        Qté_Equipement     Int (25),
+DROP TABLE IF EXISTS EQUIPEMENT_CUISINE;
+CREATE TABLE EQUIPEMENT_CUISINE(
+        Id_Equipement     INTEGER IDENTITY(1, 1) PRIMARY KEY,
+        Eqmt_Cuisine     VARCHAR(64),
+        Qté_Equipement     INT,
         PRIMARY KEY (Id_Equipement)
-)ENGINE=InnoDB;
+)
+
+
+#TABLE : RESERVATION
+
+DROP TABLE IF EXISTS RESERVATION
+CREATE TABLE RESERVATION(
+        Id_Reservation    INTEGER IDENTITY(1, 1) PRIMARY KEY,
+        Nombre_Client     INT,
+        Menu_Choisir     VARCHAR(250),
+	Date_Reservation  Date,
+        PRIMARY KEY (Id_Reservation)
+)
 
 
 #TABLE : EXISTS DENREES
 
 DROP TABLE IF EXISTS DENREES;
 CREATE TABLE DENREES(
-        Id_denrée     Auto_increment (25),
-        Type_Denrée     Varchar (250),
-        Qté_denrée     Int (25),
-        Date_denrée     Date (25),
-        Prix_denrée     Float (25),
-        Id_Stock_STOCK     Auto_increment (30),
+        Id_denrée    INTEGER IDENTITY(1, 1) PRIMARY KEY,
+        Type_Denrée     VARCHAR(250),
+        Qté_denrée     INT,
+        Date_denrée     DATE,
+        Prix_denrée     FLOAT(25),
+        Id_Stock_STOCK     INTEGER IDENTITY(1, 1),
         PRIMARY KEY (Id_denrée)
-)ENGINE=InnoDB;
+)
 
 
 #TABLE :RECETTES
 
 DROP TABLE IF EXISTS RECETTES;
 CREATE TABLE RECETTES(
-        Id_Recette     Auto_increment (25),
-        Nom_Recette     Varchar (25),
-        Type_Recette     Varchar (25),
-        Temp_Preparation     Datetime,
-        Prix     Float (25),
+        Id_Recette     INTEGER IDENTITY(1, 1) PRIMARY KEY,
+        Nom_Recette     VARCHAR(64),
+        Type_Recette     VARCHAR(64),
+        Temp_Preparation     DATETIME,
+        Prix     FLOAT(25),
         PRIMARY KEY (Id_Recette)
-)ENGINE=InnoDB;
+)
 
 #TABLE : MATERIELS RESTAURATION
 
-DROP TABLE IF EXISTS MATERIELS RESTAURATION;
-CREATE TABLE MATERIELS RESTAURATION(
-        Id_Materiel_Restauration     Auto_increment (25),
-        Nom_Materiel_Restauration     Varchar (250,2),
-        Type_Materiel_Restauration     Varchar (250),
-        Qté_Materiel_Restauration     Int (25),
+DROP TABLE IF EXISTS MATERIELS_RESTAURATION;
+CREATE TABLE MATERIELS_RESTAURATION(
+        Id_Materiel_Restauration     INTEGER IDENTITY(1, 1) PRIMARY KEY,
+        Nom_Materiel_Restauration     VARCHAR(250),
+        Type_Materiel_Restauration     VARCHAR(250),
+        Qté_Materiel_Restauration     INT,
         PRIMARY KEY (Id_Materiel_Restauration)
-)ENGINE=InnoDB;
+)
 
 # TABLE: MATERIELS RESTAURATION
 
 DROP TABLE IF EXISTS Faire;
 CREATE TABLE Faire(
-        Id_Equipement_EQUIPEMENT CUISINE     Auto_increment (25,2),
-        Id_Recette_RECETTES     Auto_increment (25),
+        Id_Equipement_EQUIPEMENT CUISINE     INTEGER IDENTITY(1, 1),
+        Id_Recette_RECETTES     INTEGER IDENTITY(1, 1),
         PRIMARY KEY (Id_Equipement_EQUIPEMENT CUISINE,Id_Recette_RECETTES)
-)ENGINE=InnoDB;
+)
 
 #TABLE: Comprendre
 
 
 DROP TABLE IF EXISTS Comprendre;
 CREATE TABLE Comprendre(
-        Id_Recette_RECETTES     Auto_increment (25),
-        Id_Ingrédient_INGREDIENTS     Auto_increment (25),
+        Id_Recette_RECETTES     INTEGER IDENTITY(1, 1),
+        Id_Ingrédient_INGREDIENTS     INTEGER IDENTITY(1, 1),
         PRIMARY KEY (Id_Recette_RECETTES,Id_Ingrédient_INGREDIENTS)
-)ENGINE=InnoDB;
+)
 
 
 #TABLE: utiliser
@@ -104,10 +115,10 @@ CREATE TABLE Comprendre(
 
 DROP TABLE IF EXISTS utiliser;
 CREATE TABLE utiliser(
-        Id_denrée_DENREES     Auto_increment (25),
-        Id_Recette_RECETTES     Auto_increment (25),
+        Id_denrée_DENREES     INTEGER IDENTITY(1, 1),
+        Id_Recette_RECETTES     INTEGER IDENTITY(1, 1),
         PRIMARY KEY (Id_denrée_DENREES,Id_Recette_RECETTES)
-)ENGINE=InnoDB;
+)
 
 
 
