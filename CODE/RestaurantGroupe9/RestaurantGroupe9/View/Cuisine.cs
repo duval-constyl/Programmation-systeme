@@ -1,4 +1,5 @@
 ﻿using System;
+using SpriteLibrary;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -12,6 +13,7 @@ namespace RestaurantGroupe9
 {
     public partial class Cuisine : UserControl
     {
+        public SpriteController spriteController;
         public Cuisine()
         {
             InitializeComponent();
@@ -33,6 +35,11 @@ namespace RestaurantGroupe9
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cuisine_Load(object sender, EventArgs e)
         {
 
         }

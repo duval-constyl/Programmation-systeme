@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantGroupe9.Model.Cuisine
+namespace RestaurantGroupe9
 {
     class Plongeur
     {

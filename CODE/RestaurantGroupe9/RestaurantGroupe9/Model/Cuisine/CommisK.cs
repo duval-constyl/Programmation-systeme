@@ -6,22 +6,20 @@ using System.Threading.Tasks;
 
 namespace RestaurantGroupe9
 {
-    class ChefCuisine
+    class CommisK
     {
-        private Menu menu;
         private Stock stock;
-        private Cuisson cuisson;
 
-        public int posX { get; set; }
-        public int posY { get; set; }
+        private int posX { get; set; }
+        private int posY { get; set; }
 
-        public ChefCuisine()
+        public CommisK()
 
         {
-            this.cuisson = new Cuisson(posX, posY);
+            this.stock = new Stock();
         }
 
-        public ChefCuisine(int posX, int posY)
+        public CommisK(int posX, int posY)
 
         {
             this.posX = posX;

@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mobile" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,10 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Controller\ControllerCommande.cs" />
+    <Compile Include="Controller\ControllerCuisson.cs" />
+    <Compile Include="Controller\ControllerTable.cs" />
+    <Compile Include="Controller\ControllerChefCuisine.cs" />
+    <Compile Include="Controller\Generateur.cs" />
+    <Compile Include="Controller\ControllerMaitreHotel.cs" />
     <Compile Include="Model\Cuisine\ChefCuisine.cs" />
     <Compile Include="Model\Cuisine\ChefPartie.cs" />
     <Compile Include="Model\Cuisine\Commande.cs" />
-    <Compile Include="Model\Cuisine\Commis.cs" />
+    <Compile Include="Model\Cuisine\CommisK.cs" />
     <Compile Include="Model\Cuisine\Cuisson.cs" />
     <Compile Include="Model\Cuisine\GestionCuisine.cs" />
     <Compile Include="Model\Cuisine\Menu.cs" />
@@ -62,7 +70,7 @@
     <Compile Include="Model\Reception\Carre.cs" />
     <Compile Include="Model\Reception\ChefRang.cs" />
     <Compile Include="Model\Reception\Client.cs" />
-    <Compile Include="Model\Reception\Commis.cs" />
+    <Compile Include="Model\Reception\CommisR.cs" />
     <Compile Include="Model\Reception\GestionReception.cs" />
     <Compile Include="Model\Reception\MaitreHotel.cs" />
     <Compile Include="Model\Reception\Rang.cs" />
@@ -100,6 +108,7 @@
     <Compile Include="View\Restaurant.Designer.cs">
       <DependentUpon>Restaurant.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\View.cs" />
     <EmbeddedResource Include="View\Cuisine.resx">
       <DependentUpon>Cuisine.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,9 +146,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Resources\" />
+    <Content Include="Resources\Chefcuisine.png" />
+    <Content Include="Resources\Chefrang.png" />
+    <Content Include="Resources\chefsparties.png" />
+    <Content Include="Resources\clients.png" />
+    <Content Include="Resources\commis.png" />
+    <Content Include="Resources\commisstagiaires.png" />
+    <Content Include="Resources\maitrehotel.png" />
+    <Content Include="Resources\serveur.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

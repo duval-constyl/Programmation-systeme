@@ -358,6 +358,7 @@
             this.DoubleBuffered = true;
             this.Name = "Cuisine";
             this.Size = new System.Drawing.Size(666, 450);
+            this.Load += new System.EventHandler(this.Cuisine_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

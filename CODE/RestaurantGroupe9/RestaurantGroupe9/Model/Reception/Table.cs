@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantGroupe9.Model.Reception
+namespace RestaurantGroupe9
 {
     class Table
     {

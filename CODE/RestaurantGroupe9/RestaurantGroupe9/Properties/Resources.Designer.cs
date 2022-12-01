@@ -67,5 +67,110 @@ namespace RestaurantGroupe9.Properties
                 resourceCulture = value;
             }
         }
+
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maitrehotel
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("maitrehotel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chefcuisine
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Chefcuisine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chefrang
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Chefrang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+
+
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chefsparties
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("chefsparties", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clients
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("clients", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap serveur
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("serveur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap commis
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("commis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap commisstagiaires
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("commisstagiaires", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
     }
 }

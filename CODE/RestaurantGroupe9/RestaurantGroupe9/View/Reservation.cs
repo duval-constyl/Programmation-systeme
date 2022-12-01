@@ -14,6 +14,8 @@ namespace RestaurantGroupe9.View
 {
     public partial class Reservation : UserControl
     {
+        internal Image spriteController;
+
         public Reservation()
         {
             InitializeComponent();

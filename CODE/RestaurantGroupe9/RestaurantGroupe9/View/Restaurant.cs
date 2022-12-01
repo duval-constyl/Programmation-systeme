@@ -1,4 +1,5 @@
 ﻿using System;
+using SpriteLibrary;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,14 +16,15 @@ namespace RestaurantGroupe9
         //private RestaurantGroupe9.Model.Model resto;
         public static int speed = 10;
         public bool verif = true;
-       /* private bool appLancee = false;
-        private bool appEnPause;
-        private int compteurMinute = 1;
-        private int compteurHeure = 12;
-        private int tickMax = 0;
-        private string stats = "";*/
+        public SpriteController spriteController;
+        /* private bool appLancee = false;
+         private bool appEnPause;
+         private int compteurMinute = 1;
+         private int compteurHeure = 12;
+         private int tickMax = 0;
+         private string stats = "";*/
+      
 
-       
 
         public Restaurant()
         {
@@ -128,6 +130,11 @@ namespace RestaurantGroupe9
         }
 
         private void maximum_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reception1_Load_1(object sender, EventArgs e)
         {
 
         }

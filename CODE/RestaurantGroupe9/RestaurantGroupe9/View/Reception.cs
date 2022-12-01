@@ -1,4 +1,5 @@
 ﻿using System;
+using SpriteLibrary;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -12,6 +13,7 @@ namespace RestaurantGroupe9
 {
     public partial class Reception : UserControl
     {
+        public SpriteController spriteController;
         public Reception()
         {
             InitializeComponent();

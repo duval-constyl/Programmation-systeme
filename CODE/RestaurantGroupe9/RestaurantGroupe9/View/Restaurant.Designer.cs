@@ -152,6 +152,7 @@
             // 
             // cuisine1
             // 
+            this.cuisine1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cuisine1.BackgroundImage")));
             this.cuisine1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.cuisine1.Location = new System.Drawing.Point(3, 0);
             this.cuisine1.Name = "cuisine1";
@@ -172,6 +173,7 @@
             this.reception1.Name = "reception1";
             this.reception1.Size = new System.Drawing.Size(666, 450);
             this.reception1.TabIndex = 3;
+            this.reception1.Load += new System.EventHandler(this.reception1_Load_1);
             // 
             // label1
             // 

@@ -53,6 +53,7 @@
             this.continu.TabIndex = 1;
             this.continu.Text = "CONTINU";
             this.continu.UseVisualStyleBackColor = true;
+            this.continu.Click += new System.EventHandler(this.continu_Click);
             // 
             // Form1
             // 

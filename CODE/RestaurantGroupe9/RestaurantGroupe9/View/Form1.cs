@@ -21,6 +21,13 @@ namespace RestaurantGroupe9
         {
             var newform = new Restaurant();
             newform.Show();
+           
+
+        }
+
+        private void continu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
